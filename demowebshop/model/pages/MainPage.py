@@ -1,4 +1,5 @@
-from selene import browser, have, be
+from selene.support.shared import browser
+from selene import have, be
 
 
 class MainPage:
@@ -27,8 +28,3 @@ class MainPage:
     def should_not_be_logged(self):
         browser.element('.ico-login').should(have.exact_text('Log in'))
         return self
-
-
-
-
-

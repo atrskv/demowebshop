@@ -4,10 +4,6 @@ from demowebshop.model.pages.CartPage import CartPage
 from demowebshop.model.pages.AccountPage import AccountPage
 
 
-
-
-
-
 class Application:
     main = MainPage()
     books = BooksPage()

@@ -1,9 +1,9 @@
 import os
-from selene import browser
+from selene.support.shared import browser
 from selene import have
 
-
 BASE_URL = os.getenv('BASE_URL')
+
 
 class BooksPage:
 
@@ -30,4 +30,3 @@ class BooksPage:
     def should_be_sorted_by_name_z_to_a(self, first_in_sorting):
         browser.all('.product-title').first.should(have.exact_text(first_in_sorting))
         return self
-

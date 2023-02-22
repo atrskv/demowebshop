@@ -1,4 +1,3 @@
-import os
 from dataclasses import dataclass
 
 
@@ -7,4 +6,3 @@ class User:
     name: str
     email: str
     password: str
-
